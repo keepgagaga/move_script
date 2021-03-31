@@ -5,7 +5,7 @@ const shell = require('shelljs');
 let type = process.argv[2];
 
 if (type === 'react') {
-    shell.cp('-R', path.resolve(__dirname, '../temp-react/build'), path.resolve(__dirname, '../saulzh.github.io/dist/react'));
+    shell.cp('-R', path.resolve(__dirname, '../template-react/build'), path.resolve(__dirname, '../saulzh.github.io/dist/react'));
     console.log('react move success');
 } else if (type === 'vue') {
     shell.cp('-R', path.resolve(__dirname, '../template-vue/dist'), path.resolve(__dirname, '../saulzh.github.io/dist/vue'));
