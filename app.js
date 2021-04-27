@@ -18,7 +18,7 @@ if (type === 'react') {
     console.log('vue3 move success');
 } else if (type === 'flutter') {
     shell.rm('-rf', '../saulzh.github.io/dist/flutter');
-    shell.cp('-R', path.resolve(__dirname, '../../flutter/flutter_collection/build/web'), path.resolve(__dirname, '../saulzh.github.io/dist/flutter'));
+    shell.cp('-R', path.resolve(__dirname, '../flutter_web/build/web'), path.resolve(__dirname, '../saulzh.github.io/dist/flutter'));
     console.log('flutter move success');
 }
 
